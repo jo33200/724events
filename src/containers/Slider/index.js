@@ -21,7 +21,7 @@ const Slider = () => {
   });
   return (
     <div className="SlideCardList">
-      {byDateDesc?.map((event, idx) => (
+      {byDateDesc?.slice().reverse().map((event, idx) => (
         <>
           <div
             key={event.title}
